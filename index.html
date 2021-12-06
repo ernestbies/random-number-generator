@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="icon" href="assets/images/logo.svg" />
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/navbar.css"/>
+	<link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/mainpage.css"/>
+    <title>Random Number Generator</title>
+	<meta name="author" content="Ernest Bieś">
+	<meta name="description" content="The application generates 20 random numbers and puts them in even and odd columns."/>
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+</head>
+<body>
+<nav class="navbar">
+	<div class="logo-container">
+		<img alt="navbar-logo" src="assets/images/logo.svg" class="navbar-logo"/>
+		<p class="page-title">Random Number Generator</p>
+	</div>
+
+	<a id="website-logo" href="https://ernestbies.com" target="_blank">
+		<img alt="website-logo" src="assets/images/website-logo.svg" class="navbar-logo"/>
+	</a>
+</nav>
+
+<div class="main-page">
+	<div class="page-header">
+		<img alt="header-logo" src="assets/images/logo.svg" class="logo-header"/>
+		<p class="app-info">After clicking on the button the application will generate 20 random integers between 1 and 100 and put them in two columns — even and odd.</p>
+		<button id="generate-button">Generate</button>
+	</div>
+
+	<div class="columns-container">
+		<div class="column-container">
+			<p class="column-header">Even numbers</p>
+			<p class="column-text">The even number list is empty. Generate numbers.</p>
+			<div id="even-numbers"></div>
+		</div>
+		<div class="column-container">
+			<p class="column-header">Odd numbers</p>
+			<p class="column-text">The odd number list is empty. Generate numbers.</p>
+			<div id="odd-numbers"></div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<p class="footer-text">App developed by Ernest Bieś. &copy; ernestbies.com 2021</p>
+	</footer>
+</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

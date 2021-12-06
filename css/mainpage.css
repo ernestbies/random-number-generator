@@ -1,0 +1,141 @@
+.main-page {
+    width: 100%;
+    position: relative;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.app-info {
+    margin-top: 25px;
+    font-size: 17px;
+    color: white;
+    font-family: Montserrat, serif;
+    font-weight: 300;
+    width: 55%;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.logo-header {
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    pointer-events: none;
+}
+
+#generate-button {
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    font-family: Montserrat, serif;
+    font-weight: bold;
+    background-color: #DC143C;
+    color: white;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin: 50px;
+    text-align: center;
+    line-height: 50px;
+    transition: all 2s ease-in-out;
+    border: 1px solid #DC143C99;
+}
+
+#generate-button:hover {
+    background-color: black;
+}
+
+.columns-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-height: 300px;
+    height: 100%;
+    margin: 30px;
+}
+
+.column-container p.column-header {
+    font-family: "Roboto Condensed", serif;
+    font-size: 17px;
+    color: white;
+    width: 100px;
+    position: relative;
+    text-align: center;
+}
+
+.column-container p.column-text {
+    font-family: "Roboto Condensed", serif;
+    font-size: 15px;
+    color: white;
+    font-weight: 300;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.column-container p.column-header:after {
+    content: "";
+    background: linear-gradient(to right, black, #DC143C, black);
+    display: block;
+    height: 1px;
+    width: 100px;
+    position: absolute;
+    bottom: -10px;
+}
+
+@keyframes show-item {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hide-item {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        margin: 0;
+    }
+}
+
+.generated-number {
+    font-family: "Roboto Condensed", serif;
+    font-size: 25px;
+    color: white;
+    opacity: 0;
+    animation: show-item 2s ease-in-out forwards;
+    text-align: center;
+}
+
+.invisible-item {
+    animation: hide-item 2s ease-in-out forwards;
+    user-select: none;
+}
+
+@media (max-width: 480px) {
+    .app-info {
+        width: 80%;
+        font-size: 14px;
+    }
+}
