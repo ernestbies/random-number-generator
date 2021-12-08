@@ -6,4 +6,4 @@ Random number generator created with HTML, CSS and JavaScript only.
 ![Screenshot](./screenshots/home.png)
 
 2. Home page after generating numbers.
-3. ![Screenshot](./screenshots/home2.png)
+![Screenshot](./screenshots/home2.png)
